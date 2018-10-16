@@ -1,0 +1,40 @@
+table,th,tr,td
+            {
+                border-collapse: collapse;
+                border: 1px solid black;
+                font-family: sans-serif;
+            }
+            table{
+                width: 100%;
+            }
+            th{
+                height: 50px;
+                font-weight: bold;
+                background-color: lightgrey;
+                font-family: sans-serif;
+
+            }
+            h1{
+                text-align: center;
+                font-family: sans-serif;
+            }
+            p{
+                font-family: sans-serif;
+            }
+            form{
+                font-family: sans-serif;
+            }
+            .container {
+                background:#f9feff;
+                width: 200px;
+                clear: both;
+                margin: auto;
+                width: 60%;
+                border: 3px solid #8AACB8;
+                padding: 10px;
+                display: table-cell;
+            }
+            .button1{
+                background-color: #000080;
+                color: white;
+            }
