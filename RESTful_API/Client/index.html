@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reading List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        table, th, td {
+        border: 1px solid black;
+    }
+    </style>
+
+</head>
+
+<body>
+<div id="myForm" align="center" style="border-style: solid; border-color: coral;">
+<h2>CRUD</h2>
+
+<p>This data was sourced from leaseweb:</p>
+<p>https://www.leaseweb.com/labs/2015/10/creating-a-simple-REST-API-in-php/</p>
+
+<p>This data was also sourced from Stack Overflow:</p>
+<p>https://stackoverflow.com/questions/6782230/ajax-passing-data-to-php-script</p>
+
+<h3>Please input the fields to create a field: </h3>
+<form id="create" method="POST">
+    Name: <br> <input type="text" name="name"><br>
+    URL: <br> <input type="text" name="url"><br>
+    Description: <br> <input type="text" name="theDesc"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+<h3>Please input the fields to update a field based on ID inputted: </h3>
+<form id="update" method="POST">
+    ID: <br> <input type="text" name="id"><br>
+    Name: <br> <input type="text" name="name"><br>
+    URL: <br> <input type="text" name="url"><br>
+    Description: <br> <input type="text" name="theDesc"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+<h3>Please input an ID to delete a field: </h3>
+<form id="delete" method="DELETE">
+    ID: <br> <input type="text" name="id"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+
+<h3>Please input an ID and press Submit and View Data to view the Database: </h3>
+<form id="retrieve" method="GET">
+    ID: <br> <input type="text" name="id"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+<button onclick="printData()">View Data</button>
+
+<h3>Please input a Name and press Submit and View Data to view the Database: </h3>
+<form id="retrieve2" method="GET">
+    Name: <br> <input type="text" name="userName"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+<button onclick="printData()">View Data</button>
+
+<table style="width:100%">
+  <tr>
+    <th>ID</th>
+    <th>theDate</th> 
+    <th>Name</th>
+    <th>URL</th>
+    <th>theDesc</th>
+  </tr>
+  <tr>
+    <td id="a1"></td>
+    <td id="a2"></td>
+    <td id="a3"></td>
+    <td id="a4"></td>
+    <td id="a5"></td>
+  </tr>
+</table>
+
+<br>
+<br>
+
+</body>
+</html>
